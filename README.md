@@ -1,5 +1,7 @@
 # Letta with Node.js and Playwright
 
+<img width="1511" alt="image" src="https://github.com/user-attachments/assets/26e5e7b6-e97b-41f9-aa4f-921fd0767e1c" />
+
 A simple setup of Letta with Node.js and Playwright support for browser automation.
 
 ## Quick Start
@@ -32,6 +34,18 @@ ANTHROPIC_API_KEY=your_key_here
 - Playwright with Firefox
 - Optional .env configuration
 - Health checks
+- MCP Server integration for headless browser automation
+
+## MCP Server Integration
+
+This setup includes support for [mcp-server-playwright-headless](https://www.npmjs.com/package/mcp-server-playwright-headless), a headless browser automation server. To use it:
+
+1. Add a new MCP server in your configuration:
+   - Type: `stdio`
+   - Command: `npx`
+   - Args: `-y,mcp-server-playwright-headless`
+
+This enables browser automation capabilities in a headless environment, perfect for containerized deployments.
 
 ## Database
 
@@ -49,6 +63,7 @@ The database is automatically initialized with the required schema and extension
 
 - [Letta AI Documentation](https://docs.letta.com)
 - [pgvector Documentation](https://github.com/pgvector/pgvector)
+- [MCP Server Playwright Headless](https://www.npmjs.com/package/mcp-server-playwright-headless)
 
 ## Environment Variables
 
